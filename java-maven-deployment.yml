@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-maven-deployment
+  labels:
+    app: java-maven-k8
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: java-maven-k8
+  template:
+    metadata:
+      labels:
+        app: java-maven-k8
+    spec:
+      containers:
+      - name: java-maven-k8
+        image: mouaddocker/java-repository:jma-1.0
+        ports:
+        - containerPort: 8080
+        
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: java-maven-k8
+spec:
+  type: NodePort
+  selector:
+    app: java-maven-k8
+  ports:
+    - protocol: TCP
+      port: 8585
+      targetPort: 8080
+      nodePort: 30100
