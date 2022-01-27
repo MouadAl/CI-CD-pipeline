@@ -1,7 +1,7 @@
 # CI-CD-pipeline
 ## What it does ? 
 This is continuous Integration & deployment pipeline of a springboot app  using jenkins docker and docker hub
-It basically checkout code from the Github repository , build the project(maven) , build Docker image and push it to Dockerhub as it is shematic below:
+It basically checkout code from the Github repository , build the project(maven) , build Docker image , push it to Dockerhub and deploy it to kubernetes cluster as  it is shematic below:
 
 ![pipeline-image](images/pipeline.jfif)
 
@@ -11,7 +11,8 @@ It basically checkout code from the Github repository , build the project(maven)
 <li>Continous Integration && Continuous Deployment</li>
 <li>Scripted pipeline in jenkins </li>
 <li>Scheduling jobs in jenkins </li>
-<li> Managing Artifact repository </li>
+<li>Managing Artifact repository </li>
+<li>Managing K8s cluster </li>
 </ul>
 
 ## How to run ? 
