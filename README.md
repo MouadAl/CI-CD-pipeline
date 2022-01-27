@@ -5,6 +5,11 @@ It basically checkout code from the Github repository , build the project(maven)
 
 ![pipeline-image](images/pipeline.jfif)
 
+
+![ci-cd-image](images/ci-cd.PNG)
+
+
+
 ## What I learned ? 
 
 <ul>
