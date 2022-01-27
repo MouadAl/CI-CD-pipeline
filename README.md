@@ -3,7 +3,7 @@
 This is continuous Integration & deployment pipeline of a springboot app  using jenkins docker and docker hub
 It basically checkout code from the Github repository , build the project(maven) , build Docker image and push it to Dockerhub as it is shematic below:
 
-![pipeline-image](images/pipeline.png)
+![pipeline-image](images/pipeline.jfif)
 
 ## What I learned ? 
 
